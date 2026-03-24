@@ -17,10 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      NODE_ENV: development
-      NPM_CONFIG_PRODUCTION: false
-
     defaults:
       run:
         working-directory: Code/client
@@ -32,23 +28,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
           cache-dependency-path: Code/client/package-lock.json
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Verify Vite installation
-        run: |
-          echo "NODE_ENV=$NODE_ENV"
-          npm config get production
-          npm config get omit
-          ls -la node_modules/.bin || true
-          npx vite --version
-
       - name: Build app
-        run: npx vite build
+        run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
