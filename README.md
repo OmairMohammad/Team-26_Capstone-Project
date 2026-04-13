@@ -5,12 +5,12 @@ Capstone project for Team 26: O’Brien Energy explainable maintenance decision-
 
 # Team Details
 
-- Omair Mohammad	233025
-- Abdul Mannan Mohammed	233562
-- Ali Ahmad	231644
-- Aqeel Ahmed	232933
-- Hamza Murtuza	232755
-- Ajay Kunwar	232391
+- Omair Mohammad (233025)
+- Abdul Mannan Mohammed	(233562)
+- Ali Ahmad	(231644)
+- Aqeel Ahmed	(232933)
+- Hamza Murtuza	(232755)
+- Ajay Kunwar	(232391)
 
 ---
 
