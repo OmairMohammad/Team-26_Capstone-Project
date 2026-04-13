@@ -1,6 +1,18 @@
-# Team-26_Capstone-Project
+# Team-26_Capstone_Project
 Capstone project for Team 26: O’Brien Energy explainable maintenance decision-support MVP with React, FastAPI, and SQLite.
 
+---
+
+# Team Details
+
+- Omair Mohammad	233025
+- Abdul Mannan Mohammed	233562
+- Ali Ahmad	231644
+- Aqeel Ahmed	232933
+- Hamza Murtuza	232755
+- Ajay Kunwar	232391
+
+---
 
 # O'Brien Energy – Industrial Decision Intelligence MVP
 This project is built for the final capstone project. It includes:
@@ -13,12 +25,15 @@ This project is built for the final capstone project. It includes:
   - offline benchmark models = **Random Forest**, **XGBoost**, **Isolation Forest**
 - **Human-in-the-loop workflow:** signup → admin approval → role assignment → review decision → audit log
 
+---
 
 ## Role access
 These route restrictions match the project requirements:
 
 - **Admin only:** Dashboard, Fleet Assets, Admin Panel
 - **All authenticated users:** Recommendations, Compliance & Audit, Reports, Transition Comparison, Settings
+
+---
 
 ## Dataset included
 The project files said the main app should be driven by a synthetic dataset if real client data is unavailable. This project includes:
@@ -45,6 +60,8 @@ The project files said the main app should be driven by a synthetic dataset if r
 - 288 condition-data rows
 - 74 alarm/fault rows
 
+---
+
 ## Demo accounts
 Use these after starting the backend:
 
@@ -55,6 +72,7 @@ Use these after starting the backend:
 - **Regulator / Auditor**: `auditor@obrienenergy.com.au` / `User123!`
 - **Sustainability Lead**: `transition@obrienenergy.com.au` / `User123!`
 
+---
 
 ## Run locally in VS Code
 
@@ -109,6 +127,8 @@ Frontend URL:
 http://127.0.0.1:5173
 ```
 
+---
+
 # Build for production
 
 ### Frontend
@@ -127,6 +147,8 @@ cd server
 uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
+---
+
 ## How the AI logic works
 
 ### Core in-app decision engine
@@ -144,6 +166,8 @@ The engine calculates:
 - explainability factors
 - strategy recommendation
 
+---
+
 ### Benchmark models included
 
 The project guidance also discussed using multiple AI models for later predictive work. To support that, the backend includes an offline benchmarking module with:
@@ -153,6 +177,9 @@ The project guidance also discussed using multiple AI models for later predictiv
 - **Isolation Forest** – anomaly benchmark
 
 These are deliberately treated as **benchmark/experimentation models**, while the core app still uses explainable rules-first recommendations.
+
+
+---
 
 ## Main pages
 
@@ -165,6 +192,8 @@ These are deliberately treated as **benchmark/experimentation models**, while th
 - **Reports** – export-style summaries and charts
 - **Transition Comparison** – compare strategy scenarios and impact
 - **Settings** – user preferences and password update screen
+
+---
 
 ## Regenerate the synthetic data
 If you want to regenerate the CSV and frontend seed data:
